@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Property Value</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function redirectToLogin() {
+            // Redirect to login.html after signup form submission
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+    <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form onsubmit="redirectToLogin(); return false;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>

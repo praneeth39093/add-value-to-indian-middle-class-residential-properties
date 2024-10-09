@@ -1,0 +1,250 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Image for Body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('images/pro2.avif'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+    background-color: #2a9d8f;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Signup and Contact Form Styles */
+.signup-container, .contact-form, .login-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container h2, .contact-form h1, .login-container h2 {
+    text-align: center;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+.signup-container label, .contact-form label, .login-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+.signup-container input, 
+.signup-container button, 
+.contact-form input, 
+.contact-form textarea, 
+.contact-form button,
+.login-container input,
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-container input:focus, 
+.contact-form input:focus, 
+.contact-form textarea:focus,
+.login-container input:focus {
+    border-color: #2a9d8f;
+    outline: none;
+}
+
+.signup-container button, 
+.contact-form button,
+.login-container button {
+    background-color: #2a9d8f;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover, 
+.contact-form button:hover,
+.login-container button:hover {
+    background-color: #21867a;
+}
+
+/* Property Listings Grid Layout */
+.property-list {
+    display: grid;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.property-item {
+    background-color: #e9f5f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.property-item h2 {
+    color: #264653;
+    margin-bottom: 8px;
+}
+
+.property-item p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.property-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #e76f51;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.property-item a:hover {
+    background-color: #d35641;
+}
+
+/* Property Details Page */
+.property-detail {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-detail h2 {
+    color: #2a9d8f;
+}
+
+.property-detail p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.signup-link a {
+    color: #2a9d8f;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Additional Pages Styling */
+
+.about-content, .services-content, .faq-content, .terms-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-content p, .services-content ul, .faq-content h3, .terms-content p {
+    margin-bottom: 15px;
+}
+
+.services-content ul {
+    padding-left: 20px;
+}
+
+.faq-content h3 {
+    margin-top: 20px;
+}
+
+.terms-content p {
+    margin-bottom: 10px;
+}
+
+
+.logout-content {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logout-content h2 {
+    text-align: center;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+.logout-content p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.logout-content button {
+    padding: 12px 24px;
+    background-color: #2a9d8f;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-content button:hover {
+    background-color: #21867a;
+}

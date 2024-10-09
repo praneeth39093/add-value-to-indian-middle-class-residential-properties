@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Property Value</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // JavaScript to clear session data or cookies
+        // This is a basic example and might need adjustments based on your actual implementation
+        function logout() {
+            // Clear any session data or cookies here
+            // Example: Clearing a cookie named 'loggedInUser'
+            document.cookie = 'loggedInUser=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+
+            // Redirect to login page after logout
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Logout</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="listings.html">Listings</a>
+            <a href="details.html">Details</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </header>
+
+    <section class="logout-content">
+        <h2>Logout Confirmation</h2>
+        <p>Are you sure you want to logout?</p>
+        <button onclick="logout()">Logout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Property Value. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Property Value</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for styling */
+        .navbar {
+            overflow: hidden;
+            background-color: #777376; /* Changed navbar background color */
+            padding: 10px; /* Added padding to the navbar */
+        }
+        
+        .navbar a {
+            float: right; /* Align links to the right */
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 20px; /* Adjusted padding for better spacing */
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+            background-color: #bcdde2; /* Darker background color on hover */
+        }
+        
+        .navbar h1 {
+            float: left;
+            margin: 0;
+            padding: 10px 20px; /* Adjusted padding for better spacing */
+            color: white;
+            font-size: 24px; /* Increased font size for the heading */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Property Value</h1>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a> 
+              
+    </div>
+
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form action="home.html">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Login</button>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+        </form>
+    </div>
+</body>
+</html>
